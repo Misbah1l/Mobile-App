@@ -1,9 +1,29 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.MyAuthApp" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+    <!-- Base application theme -->
+    <style name="Base.Theme.MyAuthApp"
+        parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your app theme here -->
     </style>
 
-    <style name="Theme.MyAuthApp" parent="Base.Theme.MyAuthApp" />
+    <!-- Main app theme -->
+    <style name="Theme.MyAuthApp"
+        parent="Base.Theme.MyAuthApp" />
+
+    <!-- Splash Screen theme -->
+    <style name="Theme.MyAuthApp.Starting"
+        parent="Theme.SplashScreen">
+
+        <item name="windowSplashScreenBackground">#081B49</item>
+
+        <item name="windowSplashScreenAnimatedIcon">
+            @drawable/splash_logo_bg
+        </item>
+
+        <item name="postSplashScreenTheme">
+            @style/Theme.MyAuthApp
+        </item>
+
+    </style>
+
 </resources>
