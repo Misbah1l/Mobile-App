@@ -69,3 +69,16 @@ The application was launched on a Vivo Y19s device. Image selection and predicti
 ## Limitations
 
 The model supports only three categories. Prediction quality depends on the model's training data and the selected image. The confidence score is the model's output score and should not be treated as a guarantee of correctness.
+
+## Dependencies
+
+The application uses the TensorFlow Lite library for on-device model inference. The TensorFlow Lite dependency is configured in the app-level `build.gradle` file.
+
+## Acknowledgements
+
+The following resources were used as references during development:
+
+* **Original Android reference repository:** [NumberGuessingAppTflite](https://github.com/Uzair390-Del/NumberGuessingAppTflite)
+* **Waste classification model source:** [Smart-Waste-Classifier](https://github.com/hmaq-44/Smart-Waste-Classifier)
+
+The original Android repository was used to understand the structure and workflow of integrating TensorFlow Lite into an Android application. The waste classification model was used for EcoSort AI's image classification functionality.
