@@ -1,84 +1,181 @@
-# EcoSort AI — AI-Based Waste Classification App
+# ♻️ EcoSort AI
 
-## Project Overview
+<p align="center">
+  <strong>AI-Based Waste Classification Android Application</strong>
+  <br>
+  An intelligent mobile application that classifies waste images using Machine Learning and TensorFlow Lite.
+</p>
 
-EcoSort AI is an Android application that uses a TensorFlow Lite machine learning model to classify waste images into three categories: Plastics, Metal, and Paper. The application performs inference on the device.
+<p align="center">
+  <img src="https://img.shields.io/badge/Platform-Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android">
+  <img src="https://img.shields.io/badge/Language-Java-orange?style=for-the-badge&logo=java&logoColor=white" alt="Java">
+  <img src="https://img.shields.io/badge/ML-TensorFlow%20Lite-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="TensorFlow Lite">
+  <img src="https://img.shields.io/badge/UI-XML-blue?style=for-the-badge&logo=xml&logoColor=white" alt="XML">
+</p>
 
-## Objectives
+---
 
-* Integrate a TensorFlow Lite model into an Android application.
-* Select waste images from the device's gallery.
-* Display the predicted waste category and model confidence score.
-* Understand the process of running machine learning inference on Android.
+## 🌱 Project Overview
 
-## Features
+**EcoSort AI** is an AI-powered Android application developed to demonstrate the integration of Machine Learning into mobile applications.
 
-* Select images using the Android image picker.
-* Preview the selected image.
-* Classify images into Plastics, Metal, or Paper.
-* Display the predicted category and confidence score.
-* Run model inference locally on the device.
+The app uses a **TensorFlow Lite model** to analyze waste images and classify them into three categories: **Plastics, Metal, and Paper**.
 
-## Technologies Used
+By performing model inference directly on the Android device, EcoSort AI demonstrates how machine learning can be integrated into mobile applications without requiring a remote prediction server.
 
-* Android Studio
-* Java
-* XML
-* Gradle Groovy DSL
-* TensorFlow Lite
-* Android Image Picker
+## 🎯 Project Objectives
 
-## Model Information
+- Integrate a TensorFlow Lite model into an Android application.
+- Enable users to select waste images from their device gallery.
+- Perform image classification directly on the device.
+- Display the predicted waste category and confidence score.
+- Understand the workflow of deploying Machine Learning models on Android.
 
-The application uses `model_unquant.tflite` and `labels.txt`, stored in `app/src/main/assets/`.
+## ✨ Key Features
 
-The model's supported categories are:
+- **Image Selection** — Select waste images using the Android image picker.
+- **Image Preview** — View the selected image before classification.
+- **AI-Based Classification** — Predict the waste category using a TensorFlow Lite model.
+- **Three Supported Categories** — Classify images into Plastics, Metal, or Paper.
+- **Confidence Score** — Display the model's prediction score.
+- **On-Device Inference** — Run predictions locally without requiring an online prediction service.
 
-1. Plastics
-2. Metal
-3. Paper
+## 🧠 Supported Waste Categories
 
-## Project Structure
+<details>
+<summary><strong>View classification categories</strong></summary>
+
+| Category | Description |
+|---|---|
+| 🧴 Plastics | Plastic waste items |
+| 🔩 Metal | Metal waste items |
+| 📄 Paper | Paper-based waste items |
+
+</details>
+
+## ⚙️ Model Information
+
+| Model Component | Details |
+|---|---|
+| Model File | `model_unquant.tflite` |
+| Labels File | `labels.txt` |
+| Framework | TensorFlow Lite |
+| Input | Selected waste image |
+| Output | Predicted category and confidence score |
+| Inference | On-device |
+
+The model files are stored in the Android app's assets directory:
+
+```text
+app/src/main/assets/
+├── model_unquant.tflite
+└── labels.txt
+```
+
+## 🛠️ Technologies Used
+
+| Technology | Purpose |
+|---|---|
+| Android Studio | Android application development |
+| Java | Application logic |
+| XML | User interface layouts |
+| Gradle Groovy DSL | Build configuration |
+| TensorFlow Lite | On-device machine learning inference |
+| Android Image Picker | Selecting images from device storage |
+
+## 📂 Project Structure
 
 ```text
 EcoSortAI/
+│
 ├── app/
-│   └── src/main/
-│       ├── assets/
-│       │   ├── model_unquant.tflite
-│       │   └── labels.txt
-│       ├── java/
-│       └── res/
+│   └── src/
+│       └── main/
+│           ├── assets/
+│           │   ├── model_unquant.tflite
+│           │   └── labels.txt
+│           │
+│           ├── java/
+│           │   └── com/example/ecosortai/
+│           │
+│           ├── res/
+│           └── AndroidManifest.xml
+│
 ├── gradle/
 ├── build.gradle
-└── settings.gradle
+├── settings.gradle
+└── README.md
 ```
 
-## How to Run
+## 🚀 Getting Started
 
-1. Open the project in Android Studio.
-2. Allow Gradle Sync to finish.
-3. Connect an Android device or start an emulator.
-4. Run the application using the Run button.
-5. Tap **Select Waste Image** and choose an image to view the prediction.
+### Prerequisites
 
-## Testing
+- Android Studio
+- Java development environment
+- Android emulator or physical Android device
 
-The application was launched on a Vivo Y19s device. Image selection and prediction were tested using waste images. Screenshots of the test results are included in the assignment's Screenshots folder.
+### Installation and Setup
 
-## Limitations
+1. Clone the repository:
 
-The model supports only three categories. Prediction quality depends on the model's training data and the selected image. The confidence score is the model's output score and should not be treated as a guarantee of correctness.
+   ```bash
+   git clone <your-repository-url>
+   ```
 
-## Dependencies
+2. Open Android Studio.
+3. Select **Open** and choose the `EcoSortAI` project folder.
+4. Allow Gradle synchronization to complete.
+5. Connect an Android device or start an emulator.
+6. Click **Run** to install and launch the application.
 
-The application uses the TensorFlow Lite library for on-device model inference. The TensorFlow Lite dependency is configured in the app-level `build.gradle` file.
+### Using the Application
 
-## Acknowledgements
+1. Launch EcoSort AI.
+2. Tap **Select Waste Image**.
+3. Choose an image from the device gallery.
+4. Preview the selected image.
+5. View the predicted waste category and confidence score.
 
-The following resources were used as references during development:
+## 🧪 Testing
 
-* **Original Android reference repository:** [NumberGuessingAppTflite](https://github.com/Uzair390-Del/NumberGuessingAppTflite)
-* **Waste classification model source:** [Smart-Waste-Classifier](https://github.com/hmaq-44/Smart-Waste-Classifier)
+The application was installed and tested on a **Vivo Y19s** Android device.
 
-The original Android repository was used to understand the structure and workflow of integrating TensorFlow Lite into an Android application. The waste classification model was used for EcoSort AI's image classification functionality.
+Testing included:
+
+- Opening the application successfully.
+- Selecting waste images from the device gallery.
+- Previewing selected images.
+- Testing image classification for the supported categories.
+- Checking the displayed prediction and confidence score.
+
+Screenshots of the application and test results are available in the assignment's `Screenshots/` folder.
+
+## ⚠️ Limitations
+
+- The model supports only three waste categories: Plastics, Metal, and Paper.
+- Prediction quality depends on the model's training data and the input image.
+- The confidence score represents the model's output and does not guarantee that a prediction is correct.
+- Items outside the supported categories may be classified incorrectly.
+
+## 📚 Acknowledgements & References
+
+This project was developed with guidance from the following reference repositories:
+
+1. **Android TensorFlow Lite Reference:** [NumberGuessingAppTflite](https://github.com/Uzair390-Del/NumberGuessingAppTflite) — Used to understand the Android project structure and TensorFlow Lite integration workflow.
+
+2. **Waste Classification Model:** [Smart-Waste-Classifier](https://github.com/hmaq-44/Smart-Waste-Classifier) — Used as the source of the waste classification model integrated into EcoSort AI.
+
+## 👩‍💻 Developer
+
+**Misbah Saeed**
+
+BS Computer Science Student
+
+---
+
+<p align="center">
+  <strong>EcoSort AI</strong>
+  <br>
+  ♻️ Making waste classification smarter through Artificial Intelligence.
+</p>
