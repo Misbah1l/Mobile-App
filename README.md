@@ -1,97 +1,141 @@
-# ✦ MyAuthApp
+<div align="center">
 
-<p align="center">
-  <strong>A Simple and Modern Android Authentication Application</strong>
+# 📱 Mobile App Development
+
+### Android Applications & Academic Projects
+
+A collection of Android applications and mobile development assignments developed using Android Studio.
+
+<p>
+  <img src="https://img.shields.io/badge/Platform-Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" />
+  <img src="https://img.shields.io/badge/IDE-Android%20Studio-3DDC84?style=for-the-badge&logo=androidstudio&logoColor=white" />
+  <img src="https://img.shields.io/badge/Language-Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" />
+  <img src="https://img.shields.io/badge/UI-XML-1572B6?style=for-the-badge&logo=xml&logoColor=white" />
+  <img src="https://img.shields.io/badge/Build-Gradle-02303A?style=for-the-badge&logo=gradle&logoColor=white" />
 </p>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Platform-Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android">
-  <img src="https://img.shields.io/badge/Language-Java-orange?style=for-the-badge&logo=java&logoColor=white" alt="Java">
-  <img src="https://img.shields.io/badge/UI-XML-blue?style=for-the-badge&logo=xml&logoColor=white" alt="XML">
-  <img src="https://img.shields.io/badge/IDE-Android%20Studio-3DDC84?style=for-the-badge&logo=androidstudio&logoColor=white" alt="Android Studio">
-</p>
+</div>
 
 ---
 
-## 📱 About the Project
+## 📌 About the Repository
 
-**MyAuthApp** is an Android application developed using **Android Studio, Java, and XML**. The project focuses on creating a clean and user-friendly authentication interface with a modern design and straightforward navigation.
+This repository contains my **Mobile App Development projects and academic assignments** developed using Android Studio.
 
-The application provides an organized starting point for user authentication features, including login, sign-up, and Google sign-in options.
+It serves as a centralized collection of my Android development work, covering application development, user interface design, authentication, machine learning integration, and practical mobile application implementation.
 
-## ✨ Key Features
+Each project is maintained in its own directory with a separate README file containing its overview, features, technologies, implementation details, and instructions.
 
-- **Welcome Screen** — A customized splash screen introducing the application.
-- **Login Interface** — A dedicated screen entry point for users.
-- **Google Sign-In Option** — An interface option for Google-based sign-in.
-- **Sign-Up Interface** — An entry point for new users.
-- **User-Friendly Design** — Clean layouts with a consistent visual style.
-- **Android Compatibility** — Developed for Android devices.
+---
 
-## 🛠️ Technologies Used
+## 📂 Projects & Assignments
 
-| Technology | Purpose |
+### 1. 🔐 MyAuthApp
+
+A simple and modern Android authentication application developed using Java and XML.
+
+**Key Features:**
+- Login and Sign Up interfaces.
+- Google Sign-In UI.
+- User-friendly application design.
+- Android activity-based navigation.
+
+**Technologies:**
+
+`Java` `XML` `Android Studio` `Gradle`
+
+📁 Project: [MyAuthApp](./MyAuthApp/)
+
+📖 Documentation: [MyAuthApp README](./MyAuthApp/README.md)
+
+---
+
+### 2. ♻️ EcoSort AI
+
+An AI-based Android application that uses a TensorFlow Lite machine learning model to classify waste images into three categories: Plastics, Metal, and Paper.
+
+**Key Features:**
+- Image selection from device gallery.
+- On-device machine learning inference.
+- Waste classification into three categories.
+- Prediction results with confidence scores.
+
+**Technologies:**
+
+`Java` `XML` `TensorFlow Lite` `Machine Learning` `Android Studio`
+
+📁 Project: [EcoSortAI](./EcoSortAI/)
+
+📖 Documentation: [EcoSortAI README](./EcoSortAI/README.md)
+
+---
+
+## 🛠️ Technologies & Tools
+
+| Category | Technologies |
 |---|---|
-| Android Studio | Development environment |
-| Java | Application programming |
-| XML | User interface layouts |
-| Gradle | Build automation |
+| Development Environment | Android Studio |
+| Programming Language | Java |
+| UI Development | XML |
+| Build System | Gradle (Groovy DSL) |
+| Version Control | Git & GitHub |
+| Machine Learning | TensorFlow Lite |
 
-## 📂 Project Structure
+---
+
+## 📁 Repository Structure
 
 ```text
-Mobile App/
+Mobile-App/
 │
 ├── MyAuthApp/
 │   ├── app/
-│   │   ├── src/
-│   │   │   └── main/
-│   │   │       ├── java/
-│   │   │       ├── res/
-│   │   │       └── AndroidManifest.xml
-│   │   └── build.gradle
-│   │
-│   ├── build.gradle
-│   └── settings.gradle
+│   ├── README.md
+│   └── build.gradle
 │
-└── .gitignore
+├── EcoSortAI/
+│   ├── app/
+│   ├── README.md
+│   └── build.gradle
+│
+├── .gitignore
+└── README.md
 ```
 
-## 🚀 Getting Started
-
-Follow these steps to run MyAuthApp locally:
-
-1. Clone this repository:
-
-   ```bash
-   git clone <your-repository-url>
-   ```
-
-2. Open **Android Studio**.
-3. Select **Open** and navigate to the `MyAuthApp` folder.
-4. Wait for Gradle synchronization to complete.
-5. Connect an Android device or start an emulator.
-6. Click **Run** to launch the application.
-
-## 🎨 Development Approach
-
-MyAuthApp is developed with a focus on:
-
-- Simple and understandable application structure.
-- Java-based Android development.
-- XML-based user interface design.
-- Consistent layouts and navigation.
-- Organized project resources and configuration.
-
-## 👩‍💻 Author
-
-**Misbah Saeed**
-
-BS Computer Science Student
+*Each project directory contains its own Android Studio project files and documentation.*
 
 ---
 
-<p align="center">
-  <strong>MyAuthApp</strong><br>
-  Building Android applications, one step at a time. ✦
-</p>
+## 🎯 Repository Objectives
+
+- Develop practical Android applications using Java and XML.
+- Understand Android application architecture and components.
+- Design user-friendly mobile interfaces.
+- Explore machine learning integration in Android applications.
+- Practice project organization and version control using Git and GitHub.
+- Build and maintain a portfolio of mobile development projects.
+
+---
+
+## 🚀 Development Workflow
+
+Projects are developed and maintained using:
+
+- Android Studio for application development.
+- Java for application logic.
+- XML for user interface design.
+- Gradle for project configuration and builds.
+- Git and GitHub for version control and project management.
+
+---
+
+<div align="center">
+
+**Developed by Misbah Saeed**
+
+BS Computer Science Student  
+Institute of Space Technology (IST)
+
+💜 Learning • Building • Improving
+
+</div>
